@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Buttons</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: transparent;
+    }
+
+    .center-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .contact-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contact-buttons a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 24px;
+      background-color: #f0f0f0;
+      text-decoration: none;
+      color: #000;
+      font-size: 14px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .contact-buttons a:hover {
+      background-color: #0077b6;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    .contact-buttons img {
+      width: 20px;
+      height: 20px;
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+    }
+
+    .contact-buttons a:hover img {
+      filter: brightness(0) invert(1);
+    }
+  </style>
+</head>
+<body>
+
+<div class="center-wrapper">
+  <div class="contact-buttons">
+    <!-- Dr. Kapila: Phone -->
+    <a href="tel:0762595946" title="Call Dr. Kapila Wijayaratne">
+      <img src="https://img.icons8.com/ios-filled/50/phone.png" alt="Call"/> Dr. Kapila - Call
+    </a>
+
+    <!-- Dr. Kapila: Email -->
+    <a href="mailto:kpalia@sci.pdn.ac.lk" title="Email Dr. Kapila Wijayaratne">
+      <img src="https://img.icons8.com/ios-filled/50/new-post.png" alt="Email"/> Dr. Kapila - Email
+    </a>
+
+    <!-- Dr. Sivakumar: Email -->
+    <a href="mailto:vsiva@sci.pdn.ac.lk" title="Email Dr. V. Sivakumar">
+      <img src="https://img.icons8.com/ios-filled/50/new-post.png" alt="Email"/> Dr. Sivakumar - Email
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
